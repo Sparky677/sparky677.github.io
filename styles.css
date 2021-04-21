@@ -18,6 +18,8 @@ main h1 {
 }
 main img {
     float: right;
+    max-width: 200px;
+    max-height: 200px;
 }
 footer {
     text-align: center;
