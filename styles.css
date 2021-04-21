@@ -1,6 +1,9 @@
 header h1 {
     color: blue;
 }
+nav ul {
+    padding: 0;
+}
 nav ul li {
     float: left;
 }
