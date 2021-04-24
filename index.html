@@ -2,35 +2,30 @@
 <html lang="en-us">
   <head>
     <meta charset="utf-8">
-    <title>Placeholder: Home</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Assignment portal for Caleb Holland in WDD 230: Web Frontend Development at Brigham Young University - Idaho">
+    <title>Caleb's Portal: Home</title>
     <link href="css/styles.css" rel="stylesheet">
+    <script src="scripts/indexScripts.js"></script>
   </head>
-  <body>
+  <body onload="lastUpdated()">
+    <div id="content">
     <header>
-      <h1>Placeholder test</h1>
-      <h2>Sub</h2>
+      <h1>Caleb D. Holland</h1>
+      <img src="images/me.jpeg" alt="Photo of me">
     </header>
-    <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="#">Schedule</a></li>
-        <li><a href="#">Contact Us</a></li>
-      </ul>
-    </nav>
     <main>
-      <h1>Home</h1>
-      <img src="images/sus.JPG" alt="Mr. Newbill">
-      <img src="images/twitter.png" alt="test">
-      <p>According to all known lawa of aviation, (Bee Movie Script Bee Movie Script Bee Movie Script Bee Movie Script Bee Movie Script Bee Movie Script)
-      </p>
-      <ol>
-        <li>Bootstrap</li>
-        <li>Materialize</li>
-        <li>Foundation</li>
-      </ol>
+      <heading>WDD 230: Assignment Portal</heading>
+      <ul>
+        <li>Lesson 02: <a href="#">Assignment Link</a></li>
+        <li>Lesson 03: <a href="#">Assignment Link</a></li>
+        <li>Lesson 04: <a href="#">Assignment Link</a></li>
+      </ul>
     </main>
     <footer>
-      &copy; Caleb Holland 2021
+      <p>&copy; 2021 | Caleb D. Holland | Washington | <a href="https://www.byui.edu/online">BYUI Online Learning</a></p>
+      <p id="updated"></p>
     </footer>
+    </div>
   </body>
 </html>
