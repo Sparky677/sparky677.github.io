@@ -13,7 +13,7 @@ header {
 background-color: lime;
 height: 75px;
 display: grid;
-grid-template-columns: 50% 505;
+grid-template-columns: 50% 50%;
 }
 header h1 {
     grid-column: 1/2;
@@ -27,7 +27,7 @@ header img {
     grid-column: 2/3;
     position: relative;
     top: 1em;
-    left: 12em;
+    left: 18em;
     width: 10em;
     box-shadow: 3px 0px 2px 0px black;
 }
@@ -51,26 +51,25 @@ footer {
     color: grey;
 }
 footer p:nth-of-type(1) {
-    grid: 1/1/2/2;
+    grid-area: 1/1/2/2;
     position: relative;
     left: 6.5em;
 }
 footer p:nth-of-type(2) {
-    grid: 1/2/2/3;
+    grid-area: 1/2/2/3;
     position: relative;
     left: -3em;
 }
 footer a {
-    grid: 1/3/2/4;
+    grid-area: 1/3/2/4;
     position: relative;
     top: 1em;
     left: -8.3em;
 }
 footer p:nth-of-type(3) {
-    grid: 2/1/3/4;
+    grid-area: 2/1/3/4;
     position: relative;
     top: -2em;
-    left: 19em;
 }
 #updated {
     color: maroon;
