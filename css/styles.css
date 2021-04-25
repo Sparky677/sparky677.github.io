@@ -1,24 +1,48 @@
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+p, ul li {
+    font-family: 'Times New Roman', Times, serif;
+}
+#content {
+    max-width: 960px;
+    margin: 4% auto;
+    padding: 0.5em;
+}
+header {
+background-color: lime;
+height: 75px;
+display: grid;
+grid-template-columns: 50% 505;
+}
 header h1 {
-    color: blue;
+    grid-column: 1/2;
+    font-size: 2.5em;
+    position: relative;
+    top: -0.3em;
+    left: 2em;
 }
-nav ul {
-    padding: 0;
+header img {
+    grid-column: 2/3;
+    position: relative;
+    top: 1em;
+    left: 12em;
+    width: 10em;
+    box-shadow: 3px 0px 2px 0px black;
 }
-nav ul li {
-    float: left;
+main h2 {
+    border-bottom: 2px solid black;
+    width: 90%;
 }
-nav ul li a {
-    display: block;
-    padding: .5em 1em;
-    background-color: red;
+main ul {
+    color: grey;
 }
-main h1 {
-    clear: both;
-    color: red;
-}
-main img {
-    float: right;
+main {
+    padding: 2em 0em 2em 0em;
 }
 footer {
-    text-align: center;
+background-color: lime;
+text-align: center;
+height: 75px;
+font-size: 1.1em;
 }
