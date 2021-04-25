@@ -21,6 +21,7 @@ header h1 {
     position: relative;
     top: -0.3em;
     left: 2em;
+    color: grey;
 }
 header img {
     grid-column: 2/3;
@@ -45,4 +46,8 @@ background-color: lime;
 text-align: center;
 height: 75px;
 font-size: 1.1em;
+color: grey;
+}
+#updated {
+    color: maroon;
 }
