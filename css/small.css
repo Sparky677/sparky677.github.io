@@ -1,5 +1,7 @@
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
 h1, h2, h3, h4, h5, h6 {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'Quicksand', sans-serif;
 }
 p, ul li {
     font-family: 'Times New Roman', Times, serif;
