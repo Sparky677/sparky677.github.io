@@ -22,24 +22,24 @@ body {
 img {
     width: 400px;
 }
-main {
+#thirds, #proximity, #whitespace {
     border-radius: 25px;
     display: grid;
     grid-template-rows: 1fr 1fr 900px 2fr;
     max-width: 600px;
     background-color: lightgrey;
 }
-main h2 {
+#thirds h2, #proximity h2, #whitespace h2 {
     grid-row: 1/2;
 }
-main h3 {
+#thirds h3, #proximity h3, #whitespace h3 {
     grid-row: 2/3;
 }
-main img {
+#thirds img, #proximity img, #whitespace img {
     grid-row: 3/4;
     justify-self: center;
 }
-main p {
+#thirds p, #proximity p, #whitespace p {
     grid-row: 4/5;
     justify-self: center;
 }
@@ -48,5 +48,4 @@ footer {
     text-align: center;
     height: 40px;
     border-radius: 25px;
-    font-size: 1em;
 }

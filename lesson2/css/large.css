@@ -2,7 +2,7 @@
 body {
     max-width: 1000px;
 }
-main {
+#thirds, #proximity, #whitespace {
     display: grid;
     grid-template-rows: 1fr 1fr 650px 3fr;
     max-width: 600px;

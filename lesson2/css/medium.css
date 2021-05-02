@@ -16,7 +16,7 @@
 img {
     width: 90%;
 }
-main {
+#thirds, #proximity, #whitespace {
     display: grid;
     grid-template-rows: 1fr 1fr 550px 3fr;
     max-width: 600px;
