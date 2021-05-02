@@ -6,7 +6,6 @@ main {
     display: grid;
     grid-template-rows: 1fr 1fr 650px 3fr;
     max-width: 600px;
-    background-color: grey;
 }
 #allthree {
     display: grid;
