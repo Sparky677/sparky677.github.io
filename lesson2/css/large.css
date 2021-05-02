@@ -1,0 +1,26 @@
+@media only screen and (min-width: 1000px) {
+body {
+    max-width: 1000px;
+}
+main {
+    display: grid;
+    grid-template-rows: 1fr 1fr 650px 3fr;
+    max-width: 600px;
+    background-color: grey;
+}
+#allthree {
+    display: grid;
+    grid-template: 99% 1%/1fr 1fr 1fr;
+    grid-gap: 10px;
+}
+#thirds {
+    grid-column: 1/2;
+}
+#proximity {
+    grid-column: 2/3;
+}
+#whitespace {
+    grid-area: 1/3/2/4;
+}
+
+}
