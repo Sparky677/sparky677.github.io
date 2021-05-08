@@ -1,3 +1,15 @@
 @media only screen and (min-width: 560px) {
 
+body {
+    max-width: 960px;
+}
+header ul {
+    display: flex;
+    right: 0rem;
+}
+header ul li {
+    flex-basis: 25%;
+}
+
+
 }

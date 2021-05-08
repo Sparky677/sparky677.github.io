@@ -1,0 +1,47 @@
+body {
+    max-width: 480px;
+    margin: 4% auto;
+    padding: 0.5em;
+    text-align: center;
+}
+h1, h2, h3, h4, h5, h5 {
+    font-family: 'Quicksand', sans-serif;
+}
+p {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.lavender {
+    background-color: #F6E8EA;
+}
+.bluegreen {
+    background-color: #84DCCF;
+}
+.black {
+    background-color: #22181C;
+    color: white
+}
+header {
+    background-color: lightgrey;
+    height: 85px;
+}
+header ul {
+    list-style-type: none;
+    position: relative;
+    right: 1rem;
+}
+main img {
+    max-width: 400px;
+}
+footer {
+    background-color: lightgrey;
+    text-align: center;
+    height: 85px;
+    font-size: 1em;
+    color: grey;
+}
+footer div {
+   display: flex;
+   align-items: center; 
+   justify-content: center;
+}
