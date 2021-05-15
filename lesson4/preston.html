@@ -11,6 +11,8 @@
         <link href="css/medium.css" rel="stylesheet">
         <link href="css/large.css" rel="stylesheet">
         <script src="js/scripts.js"></script>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
       </head>
       <body onload="callFuncts()">
           <div id="content">
@@ -20,14 +22,14 @@
                 <h2>Site Slogan</h2>
                 </header>
             <nav class="green">
-                <button onclick="toggleMenu()">&#9776;</button>
+                <button onclick="toggleMenu()">&#9776; MENU</button>
                 <ul id="primaryNav" class="hide">
-                   <li>Home</li>
-                    <li class="active">Preston</li>
-                    <li>Soda Springs</li>
-                    <li>Fish Haven</li>
-                    <li>Storm Center</li>
-                    <li>Gallery</li>
+                   <li><a href="#">Home</a></li>
+                    <li><a class="active" href="#">Preston</a></li>
+                    <li><a href="#">Soda Springs</a></li>
+                    <li><a href="#">Fish Haven</a></li>
+                    <li><a href="#">Storm Center</a></li>
+                    <li><a href="#">Gallery</a></li>
                 </ul>
             </nav>
             <main>
@@ -57,29 +59,33 @@
                     </p>
                     <img src="#" alt="related article image">
                 </article>
-                <section class="green">
+                <section>
                     <h2>Contact Us</h2>
-                    <ul>
-                        <li>Address:</li>
-                        <li>The Weather Center</li>
-                        <li>123 Main Street</li>
-                        <li>Franklin, MI 87654</li>
-                    </ul>
-                    <ul>
-                        <li>Phone:</li>
-                        <li>(801) 555-1234</li>
-                    </ul>
-                    <ul>
-                        <li>Email:</li>
-                        <li>contact@ohnoweather.com</li>
-                    </ul>
+                    <div class="contact">
+                        <ul class="c1">
+                            <li>Address:</li>
+                            <li>The Weather Center</li>
+                            <li>123 Main Street</li>
+                            <li>Franklin, MI 87654</li>
+                        </ul>
+                        <ul class="c2">
+                            <li>Phone:</li>
+                            <li>(801) 555-1234</li>
+                        </ul>
+                        <ul class="c3">
+                            <li>Email:</li>
+                            <li>contact@ohnoweather.com</li>
+                        </ul>
+                    </div>
                     <img src="#" alt="google map of the town embedded
                     using an iframe">
                 </section>
             </main>
-            <footer>
-                <p id="copy"></p>
-                <p id="updated"></p>
+            <footer class="green">
+                <div>
+                    <p id="copy"></p>
+                    <p id="updated"></p>
+                </div>
             </footer>
           </div>
       </body>
