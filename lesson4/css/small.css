@@ -101,15 +101,23 @@ nav button:hover, nav ul li a:hover {
 }
 
 footer {
-    
+
 }
 
 footer div {
-    display: flex;    
+    display: flex;   
+    justify-content: space-around; 
 }
 
 .hide {
     display: none;
+}
+
+.square {
+    display: none;
+    border-bottom: solid 2px black;
+    border-right: solid 2px black;
+    border-left: solid 2px black;
 }
 
 
