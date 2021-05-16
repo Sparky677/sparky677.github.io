@@ -109,7 +109,7 @@ footer div {
     justify-content: space-around; 
 }
 
-.hide {
+.hide, .hide2 {
     display: none;
 }
 

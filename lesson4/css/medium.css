@@ -12,6 +12,10 @@
     margin-left: 1%;
 }
 
+.hide2 {
+    display: block;
+}
+
 #forecast {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
