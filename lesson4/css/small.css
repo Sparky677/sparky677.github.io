@@ -9,7 +9,7 @@ body {
 }
 
 .green, h1, h2, h3, h4, h5, h6 {
-    background-color: #0deecc;
+    background-color: #00d4b5;
     border-radius: 25px;
     padding-left: 10px;
     font-family: 'Quicksand', sans-serif;
@@ -39,14 +39,14 @@ header h1 {
     grid-area: 1/2/2/3;
     max-width: 50%;
     background-color: transparent;
-    color: #0deecc;
+    color: #00d4b5;
 }
 
 header h2 {
     grid-area: 2/2/3/3;
     max-width: 50%;
     background-color: transparent;
-    color: #0deecc;
+    color: #00d4b5;
 }
 
 nav {
@@ -61,7 +61,7 @@ nav ul li a {
     display: block;
     padding: 0.8rem 2%;
     text-decoration: none;
-    color:rgba(255,255,255,0.8);
+    color: white;
     border-top: 1px solid rgba(0,0,0,0.3);
 }
 
