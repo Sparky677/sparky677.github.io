@@ -9,18 +9,25 @@ body {
 }
 
 .green, h1, h2, h3, h4, h5, h6 {
-    background-color: #005745;
     border-radius: 25px;
     padding-left: 10px;
     font-family: 'Quicksand', sans-serif;
+}
+
+.green, #green1 {
+    background-color: #005745;
+    color: white;
 }
 
 h1, h2, h3, h4, h5, h6 {
     color: white;
 }
 
-p {
+.green p, .green img {
     color: white;
+}
+
+p {
     font-family: 'Times New Roman', Times, serif;
 }
 
@@ -120,13 +127,13 @@ footer div {
     border-left: solid 2px black;
 }
 
+.square h3 {
+    background-color: #005745;
+}
+
 
 .clearfix:after {
     content: "";
     display: table;
     clear: both;
-}
-
-img {
-    color: white;
 }
