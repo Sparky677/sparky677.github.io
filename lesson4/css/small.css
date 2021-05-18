@@ -9,7 +9,7 @@ body {
 }
 
 .green, h1, h2, h3, h4, h5, h6 {
-    background-color: #00d4b5;
+    background-color: #005745;
     border-radius: 25px;
     padding-left: 10px;
     font-family: 'Quicksand', sans-serif;
@@ -20,7 +20,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 p {
-    color: #22181C;
+    color: white;
     font-family: 'Times New Roman', Times, serif;
 }
 
@@ -39,14 +39,14 @@ header h1 {
     grid-area: 1/2/2/3;
     max-width: 50%;
     background-color: transparent;
-    color: #00d4b5;
+    color: #005745;
 }
 
 header h2 {
     grid-area: 2/2/3/3;
     max-width: 50%;
     background-color: transparent;
-    color: #00d4b5;
+    color: #005745;
 }
 
 nav {
@@ -125,4 +125,8 @@ footer div {
     content: "";
     display: table;
     clear: both;
+}
+
+img {
+    color: white;
 }
