@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="description" content="Assignment">
         <meta name="author" content="Caleb Holland">
-        <title>Title</title>
+        <title>BOM assignment</title>
         <link href="css/normalize.css" rel="stylesheet">
         <link href="css/small.css" rel="stylesheet">
         <link href="css/medium.css" rel="stylesheet">
@@ -13,23 +13,19 @@
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
       </head>
-      <body onload="callFuncts()">
-          <div id="content">
-            <header>
-
-            </header>
-            <nav>
-                <ul>
-
-                </ul>
-            </nav>
-            <main>
-
-            </main>
-            <footer>
-                
-            </footer>
-            <script src="js/scripts.js"></script>
+      <body>
+        <h1>📘 Book of Mormon - Top 25</h1>
+        <main>
+          <div class="input">
+            <label>Enter Book and Chapter
+              <input type="text" id="favchap" placeholder="Alma 5" required></label>
+            <button type="submit" id="submit">Add Chapter</button>
           </div>
+          <div class="listcontainer">
+            <ul class="list" id="list">
+            </ul>
+          </div>
+          <script src="js/scripts.js"></script>
+        </main>
       </body>
 </html>
