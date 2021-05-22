@@ -14,7 +14,7 @@ body {
     font-family: 'Quicksand', sans-serif;
 }
 
-.green, .green a, #green1 {
+.green, #green1 {
     background-color: #005745;
     color: white;
 }
@@ -63,10 +63,6 @@ header h3 {
     max-width: 60%;
     background-color: transparent;
     color: #005745;
-}
-
-nav {
-
 }
 
 ul {
