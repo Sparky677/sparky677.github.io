@@ -12,6 +12,17 @@
     margin-left: 1%;
 }
 
+.square img {
+    height: 50px;
+    width: 50px;
+    display: block;
+    margin: 0px auto 0px auto;
+}
+
+.square p {
+    text-align: center;
+}
+
 .hide2 {
     display: block;
 }
