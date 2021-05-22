@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Assignment">
+        <meta name="author" content="Caleb Holland">
+        <title>Weather in Preston</title>
+        <link href="css/normalize.css" rel="stylesheet">
+        <link href="css/small.css" rel="stylesheet">
+        <link href="css/medium.css" rel="stylesheet">
+        <link href="css/large.css" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+      </head>
+      <body onload="callFuncts()">
+          <div id="content">
+            <aside id="date" class="nottoday">Saturday - Preston Pancakes in the Park! <br>9:00 AM Saturday at the city park.</aside>
+            <header>
+                <img src="images/logo.png" alt="logo">
+                <h1>Oh No, Weather!</h1>
+                <h3>Prepare For The Worst</h3>
+                </header>
+            <nav class="green" id="menubar">
+                <button onclick="toggleMenu()">&#9776; MENU</button>
+                <ul id="primaryNav" class="hide">
+                   <li><a href="#">Home</a></li>
+                    <li><a class="active" href="#">Preston</a></li>
+                    <li><a href="#">Soda Springs</a></li>
+                    <li><a href="#">Fish Haven</a></li>
+                    <li><a href="#">Storm Center</a></li>
+                    <li><a href="#">Gallery</a></li>
+                </ul>
+            </nav>
+            <main>
+                <h1 class="green">Preston</h1>
+                <section id="herobox">
+                    <ul id="summary">
+                        <li>Weather Summary</li>
+                        <li>Currently: Sunny</li>
+                        <li>High: 76 °F</li>
+                        <li>Wind Chill: 75 °F</li>
+                        <li>Humidity: 69%</li>
+                        <li>Wind speed: 5 MPH</li>
+                    </ul>
+                    <img src="images/prestonhero.jpg" alt="Hero Image">
+                </section>
+                <h2 class="hide2" id="green1">Five-Day Forecast</h2>
+                <section id="forecast">
+                 <div class="square" id="s1">
+                    <h3 class="square">Day</h3>
+                    <img src="images/sunny.png" alt="sunny">
+                    <p>High Temp: </p>
+                    </div>
+                 <div class="square" id="s2">
+                    <h3 class="square">Day</h3>
+                    <img src="images/sunny.png" alt="sunny">
+                    <p>High Temp: </p>
+                    </div>
+                 <div class="square" id="s3">
+                    <h3 class="square">Day</h3>
+                    <img src="images/sunny.png" alt="sunny">
+                    <p>High Temp: </p>
+                    </div>
+                 <div class="square" id="s4">
+                    <h3 class="square">Day</h3>
+                    <img src="images/sunny.png" alt="sunny">
+                    <p>High Temp: </p>
+                    </div>
+                 <div class="square" id="s5">
+                    <h3 class="square">Day</h3>
+                    <img src="images/sunny.png" alt="sunny">
+                    <p>High Temp: </p>
+                    </div>
+                </section>
+                <article class="green">
+                    <img src="images/granicus.jpg" alt="Battle of Granicus River map">
+                    <h2>On This Day</h2>
+                    <p>On this day in history, 334 BC, The Macedonian army of Alexander the Great
+                        defeated Darius III of Persia in the Battle of the Granicus River.
+                        <a href="https://www.onthisday.com/events/may/22">Source: onthisday.com</a>
+                    </p>
+                </article>
+                <section>
+                    <h2 class="green">Contact Us</h2>
+                    <div class="contact">
+                        <ul class="c1">
+                            <li>Address:</li>
+                            <li>The Weather Center</li>
+                            <li>123 Main Street</li>
+                            <li>Franklin, MI 87654</li>
+                        </ul>
+                        <ul class="c2">
+                            <li>Phone:</li>
+                            <li>(801) 555-1234</li>
+                        </ul>
+                        <ul class="c3">
+                            <li>Email:</li>
+                            <li>contact@ohnoweather.com</li>
+                        </ul>
+                        <img class="c4" src="images/prestonmap.jpg" alt="google map of the town embedded
+                    using an iframe">
+                    </div>
+                </section>
+            </main>
+            <footer class="green">
+                <div>
+                    <p id="copy"></p>
+                    <p id="updated"></p>
+                </div>
+            </footer>
+          </div>
+          <script src="js/scripts.js"></script>
+      </body>
+</html>
