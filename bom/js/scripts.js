@@ -1,11 +1,11 @@
-let remove="remove";
+
 document.getElementById("submit").addEventListener("click", function() {
   let chapter=document.getElementById("favchap").value;
   if (chapter !=="") {
     const newbtn=document.createElement("button");
     newbtn.innerHTML="\u274C";
     newbtn.addEventListener("click", function() {
-      newbtn.parentElement.classList=remove;
+      newbtn.parentElement.remove();
     });
 
     const newli=document.createElement("li");
@@ -16,6 +16,7 @@ document.getElementById("submit").addEventListener("click", function() {
     document.getElementById("list").appendChild(newli);
 
     document.getElementById("favchap").value="";
+    document.getElementById("favchap").focus;
   }
 });
 

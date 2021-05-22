@@ -52,9 +52,7 @@ li {
 	margin-bottom: 0.5rem;
 }
 
-.remove {
-	display: none;
-}
+
 
 .clearfix:after {
     content: "";
