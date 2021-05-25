@@ -6,17 +6,17 @@ function lastUpdated() {
   document.getElementById("copy").innerHTML= "©" + n + " | Caleb D. Holland";
 }
 
-function satbanner() {
+function fribanner() {
   var day=new Date();
   var now=day.getDay();
-  if (now==6) {
+  if (now==5) {
     document.getElementById("date").classList="today";
   }
 }
 
 function callFuncts() {
   lastUpdated();
-  satbanner();
+  fribanner();
 }
 
 function toggleMenu() {
