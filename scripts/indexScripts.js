@@ -1,7 +1,7 @@
 WebFont.load({
   google: {
     families: [
-       'Quicksand', sans-serif
+       'Quicksand', 'sans-serif'
     ]
   }
 });

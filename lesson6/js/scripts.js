@@ -1,3 +1,11 @@
+WebFont.load({
+  google: {
+    families: [
+       'Quicksand', 'sans-serif'
+    ]
+  }
+});
+
 let lastUpdate = document.lastModified;
 var d = new Date();
 var n = d.getFullYear();
@@ -17,6 +25,7 @@ function fribanner() {
 function callFuncts() {
   lastUpdated();
   fribanner();
+  WindChill();
 }
 
 function toggleMenu() {

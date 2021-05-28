@@ -38,12 +38,14 @@
                     <ul id="summary">
                         <li>Weather Summary</li>
                         <li>Currently: Sunny</li>
-                        <li>High: 76 °F</li>
-                        <li>Wind Chill: 75 °F</li>
+                        <li>High: <span id="hitemp">49</span> °F</li>
+                        <li>Wind Chill: <span id="chill"></span>°F</li>
                         <li>Humidity: 69%</li>
-                        <li>Wind speed: 5 MPH</li>
+                        <li>Wind speed: <span id="wind">10</span> MPH</li>
                     </ul>
-                    <img src="images/prestonhero.jpg" alt="Hero Image">
+                    <img src="images/franklinOriginal560.jpg" alt="Hero Image"
+                    srcset="images/franklinOriginal1120.jpg 1120w, 
+                    images/franklinOriginal1920.jpg 1920w ">
                 </section>
                 <h2 class="hide2" id="green1">Five-Day Forecast</h2>
                 <section id="forecast">
@@ -110,6 +112,8 @@
                 </div>
             </footer>
           </div>
+          <script src="js/windChill.js"></script>
+          <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
           <script src="js/scripts.js"></script>
       </body>
 </html>
