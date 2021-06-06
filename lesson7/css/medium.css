@@ -77,7 +77,7 @@ article img {
 #gallery {
     display: grid;
     grid-template: 1fr 1fr 1fr 1fr 1fr/1fr 1fr;
-    gap: 10px;
+    gap: 0px;
     justify-items: center;
 }
 
@@ -85,10 +85,12 @@ article img {
     grid-area: 5/1/6/3;
 }
 
-#gallery picture {
-    max-width:300px;
+#gallery figure {
     margin-bottom: 0px;
     height: 300px;
+}
+#gallery figure img {
+    max-width: 300px;
 }
 
 }

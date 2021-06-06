@@ -172,7 +172,7 @@ img {
     grid-template-rows: repeat(9);
 }
 
-#gallery picture {
+#gallery figure {
     margin-bottom: 40px;
 }
 
