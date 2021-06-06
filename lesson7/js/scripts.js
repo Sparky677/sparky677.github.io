@@ -1,3 +1,8 @@
+function clear() {
+  localStorage.clear();
+  console.log("Cleared.");
+}
+
 var date=new Date();
 now=date.getTime();
 
@@ -7,7 +12,12 @@ function lastVisited() {
   previous(now);
   days=(timeSince/86400000);
   rounded=Math.floor(days);
-  final="Last visited "+String(timeSince)+" milliseconds ago, or "+String(rounded)+" days.";
+  if (rounded<=3650) {
+    final="Last visited "+String(timeSince)+" milliseconds ago, or "+String(rounded)+" days.";
+  }
+  else {
+    final="Looks like this is your first visit!"
+  }
   document.getElementById("visited").innerHTML=final;
 }
 
