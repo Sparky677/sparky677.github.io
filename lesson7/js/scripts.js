@@ -1,4 +1,26 @@
-//why did it break when I sent it to github
+var date=new Date();
+now=date.getTime();
+
+function lastVisited() {
+  let last=previous(0);
+  let timeSince=(now-last);
+  previous(now);
+  days=(timeSince/86400000);
+  rounded=Math.floor(days);
+  final="Last visited "+String(timeSince)+" milliseconds ago, or "+String(rounded)+" days.";
+  document.getElementById("visited").innerHTML=final;
+}
+
+function previous(time) {
+  if (time!=0) {
+    localStorage.setItem ("last", time)
+  }
+  else {
+    lastVisit=localStorage.getItem("last")
+    return lastVisit
+  }
+}
+
 const imagesToLoad = document.querySelectorAll('img[data-src]');
 const loadImages = (image) => {
   image.setAttribute('src', image.getAttribute('data-src'));
@@ -8,7 +30,7 @@ const loadImages = (image) => {
 };
 
 const options = {
-  rootMargin: '0px 0px -200px 0px',
+  rootMargin: '0px 0px -100px 0px',
   threshold: 0
 };
 
@@ -52,6 +74,7 @@ function callFuncts() {
       ]
     }
   });
+  lastVisited();
 }
 
 function toggleMenu() {
