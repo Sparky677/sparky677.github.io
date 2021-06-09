@@ -1,0 +1,28 @@
+#content {
+    max-width: 960px;
+    margin: 4% auto;
+    padding: 0.5em;
+}
+
+body {
+    background-color: #F6E8EA;
+}
+
+img {
+    width: 100%;
+}
+
+#gallery {
+    display: grid;
+    grid-auto-rows: auto;
+}
+
+#gallery figure {
+    margin-bottom: 40px;
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
