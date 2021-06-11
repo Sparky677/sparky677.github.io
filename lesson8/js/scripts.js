@@ -65,12 +65,13 @@ function lastUpdated() {
   let lastUpdate = document.lastModified;
   var d = new Date();
   var n = d.getFullYear();
-  document.getElementById("updated").innerHTML="Last Updated: " + lastUpdate;
+  document.getElementById("updated").innerHTML="Compiled " + lastUpdate + " by Caleb Holland";
   document.getElementById("copy").innerHTML= "©" + n + " | Caleb D. Holland";
 }
 
 
 function callFuncts() {
+  lastUpdated();
   WebFont.load({
     google: {
       families: [
