@@ -1,11 +1,3 @@
-function fribanner() {
-  var day=new Date();
-  var now=day.getDay();
-  if (now==5) {
-    document.getElementById("date").classList="today";
-  }
-}
-
 var date=new Date();
 now=date.getTime();
 
@@ -73,18 +65,13 @@ function lastUpdated() {
   let lastUpdate = document.lastModified;
   var d = new Date();
   var n = d.getFullYear();
-  document.getElementById("updated").innerHTML="Last Updated: " + lastUpdate;
+  document.getElementById("updated").innerHTML="Compiled " + lastUpdate + " by Caleb Holland";
   document.getElementById("copy").innerHTML= "©" + n + " | Caleb D. Holland";
 }
 
 
 function callFuncts() {
   lastUpdated();
-  try {
-    WindChill();
-    fribanner();
-  }
-  catch {}
   WebFont.load({
     google: {
       families: [
@@ -92,26 +79,8 @@ function callFuncts() {
       ]
     }
   });
-  lastVisited();
 }
 
 function toggleMenu() {
   document.getElementById("primaryNav").classList.toggle("hide");
 }
-
-function checkName() {
-  let name=document.getElementById("fname").value;
-  isName=/\D/.test(name);
-  isNumber=/\d/.test(name);
-  length=name.length;
-  if (isName==true && isNumber!=true && length>=5) {
-    document.getElementById("fname").className="complete";
-  }
-  else {
-    document.getElementById("fname").className="incomplete";
-  }
-}
-
-document.getElementById("fname").addEventListener("input", function(){
-  checkName();
-});
