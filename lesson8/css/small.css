@@ -48,7 +48,7 @@ p {
 header {
     display: grid;
     grid-template: 3rem 3rem/110px 100%;
-    background-color: #F6E8EA;
+    background-color: #f6e8ea;
 }
 
 header img {
@@ -222,8 +222,8 @@ form label.top input, form label.top select {
     -webkit-appearance: none;
     display: block;
     font-size: 1rem;
-    border: solid 1px #005745;
-    border-radius: 4px;
+    border: solid 2px #005745;
+    border-radius: 8px;
     padding: .75rem;
     color: #005745;
     width: 100%;
@@ -233,8 +233,8 @@ form label.top input, form label.top select {
 
 .slider {
     font-size: 1rem;
-    border: solid 1px #005745;
-    border-radius: 4px;
+    border: solid 2px #005745;
+    border-radius: 8px;
     padding: .75rem;
     margin-top: 2rem;
     color: #005745;
