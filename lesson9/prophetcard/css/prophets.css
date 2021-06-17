@@ -1,0 +1,49 @@
+h1, h2 {
+    text-align: center;
+    color: #4032ff;
+}
+
+
+main div {
+    display: grid;
+    grid-auto-rows: auto;
+    gap: 10px;
+}
+
+main div section {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    background-color: #d9eeff;
+    border: 2px solid #4032ff;
+}
+
+main div section img {
+    max-width: 260px;
+    margin: 10px 80px 80px 80px;
+}
+
+@media only screen and (min-width: 860px) {
+
+main div {
+    display: grid;
+    grid-auto-rows: auto;
+    grid-template-columns: 1fr 1fr;
+}
+
+}
+
+@media only screen and (min-width: 1260px) {
+
+main div {
+    display: grid;
+    grid-auto-rows: auto;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+main div section img {
+    max-width: 260px;
+    margin: 10px 20px 80px 20px;
+}
+
+}
