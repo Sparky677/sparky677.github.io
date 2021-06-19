@@ -111,7 +111,8 @@ function checkName() {
     document.getElementById("fname").className="incomplete";
   }
 }
-
+try {
 document.getElementById("fname").addEventListener("input", function(){
   checkName();
-});
+})}
+catch{};
