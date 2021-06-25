@@ -62,7 +62,9 @@ fetch(apiURL2)
         let icon=document.createElement('img');
         let iconcode=weatherData.list[i].weather[0].icon;
         let iconpath="https://openweathermap.org/img/wn/"+iconcode+".png"
+        let desc=weatherData.weather[0].icon.description;
         icon.src=iconpath;
+        icon.setAttribute("alt", desc);
 
         card.appendChild(dayName);
         card.appendChild(temp);
