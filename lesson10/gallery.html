@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Assignment">
+        <meta name="author" content="Caleb Holland">
+        <title>Weather Gallery</title>
+        <link href="css/normalize.css" rel="stylesheet">
+        <link href="css/small.css" rel="stylesheet">
+        <link href="css/medium.css" rel="stylesheet">
+        <link href="css/large.css" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+      </head>
+      <body onload="callFuncts()">
+          <div id="content">
+            <aside id="date" class="nottoday">Saturday - Preston Pancakes in the Park! <br>9:00 AM Saturday at the city park.</aside>
+            <header>
+                <img src="images/logo.png" alt="logo">
+                <h1 class="noback">Oh No, Weather!</h1>
+                <h3 class="noback">Prepare For The Worst</h3>
+                </header>
+            <nav class="green" id="menubar">
+                <button onclick="toggleMenu()">&#9776; MENU</button>
+                <ul id="primaryNav" class="hide">
+                   <li><a href="index.html">Home</a></li>
+                    <li><a href="preston.html">Preston</a></li>
+                    <li><a href="#">Soda Springs</a></li>
+                    <li><a href="#">Fish Haven</a></li>
+                    <li><a href="stormcenter.html">Storm Center</a></li>
+                    <li><a class="active" href="gallery.html">Gallery</a></li>
+                </ul>
+            </nav>
+            <main>
+                <h1 class="noback">Image Gallery</h1>
+                <div id="gallery">
+                    <figure><img src="images/placeholder.png" data-src="images/gal1w300.jpg" alt="weather"><figcaption>Stormy</figcaption></figure>
+                    <figure><img src="images/placeholder.png" data-src="images/gal2w300.jpg" alt="weather"><figcaption>Cloudy</figcaption></figure>
+                    <figure><img src="images/placeholder.png" data-src="images/gal3w300.jpg" alt="weather"><figcaption>Solid Cover</figcaption></figure>
+                    <figure><img src="images/placeholder.png" data-src="images/gal4w300.jpg" alt="weather"><figcaption>Clear Blue</figcaption></figure>
+                    <figure><img src="images/placeholder.png" data-src="images/gal5w300.jpg" alt="weather"><figcaption>Partly Cloudy</figcaption></figure>
+                    <figure><img src="images/placeholder.png" data-src="images/gal6w300.jpg" alt="weather"><figcaption>Dramatic</figcaption></figure>
+                    <figure><img src="images/placeholder.png" data-src="images/gal7w300.jpg" alt="weather"><figcaption>Solid Cover Again</figcaption></figure>
+                    <figure><img src="images/placeholder.png" data-src="images/gal8w300.jpg" alt="weather"><figcaption>Clear Blue Again</figcaption></figure>
+                    <figure id="n9"><img src="images/placeholder.png" data-src="images/gal9w300.jpg" alt="weather"><figcaption>Clear Over The Ocean</figcaption></figure>
+                </div>
+            </main>
+            <footer class="green">
+                <div>
+                    <p id="copy"></p>
+                    <p id="updated"></p>
+                    <p id="visited"></p>
+                </div>
+            </footer>
+          </div>
+          <script src="js/windChill.js"></script>
+          <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+          <script src="js/scripts.js"></script>
+      </body>
+</html>
