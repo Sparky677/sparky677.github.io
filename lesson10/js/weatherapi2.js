@@ -16,6 +16,7 @@ const APPID="3113faef71a1cef9cdb5a6d8f8cb88c7"
 
 const apiURL=`https://api.openweathermap.org/data/2.5/weather?id=${cityid}&appid=${APPID}&units=imperial`
 const apiURL2=`https://api.openweathermap.org/data/2.5/forecast?id=${cityid}&appid=${APPID}&units=imperial`
+const desc="Weather icon"
 
 fetch(apiURL)
   .then(function (response) {
@@ -26,7 +27,6 @@ fetch(apiURL)
     document.getElementById("hitemp").innerHTML=weatherData.main.temp;
     document.getElementById("wind").innerHTML=weatherData.wind.speed;
     document.getElementById("Humidity").innerHTML=weatherData.main.humidity;
-
   });
     
 fetch(apiURL2)
@@ -62,7 +62,6 @@ fetch(apiURL2)
         let icon=document.createElement('img');
         let iconcode=weatherData.list[i].weather[0].icon;
         let iconpath="https://openweathermap.org/img/wn/"+iconcode+".png"
-        let desc=weatherData.weather[0].icon.description;
         icon.src=iconpath;
         icon.setAttribute("alt", desc);
 
