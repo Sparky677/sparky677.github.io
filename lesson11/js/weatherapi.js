@@ -11,7 +11,7 @@ weekday[4]="Thursday";
 weekday[5]="Friday";
 weekday[6]="Saturday";
 
-const cityid=document.getElementById("content").className
+const cityid=document.getElementById("content").className;
 const APPID="3113faef71a1cef9cdb5a6d8f8cb88c7"
 
 const apiURL=`https://api.openweathermap.org/data/2.5/weather?id${cityid}&appid=${APPID}&units=imperial`
