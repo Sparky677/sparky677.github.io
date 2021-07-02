@@ -74,6 +74,23 @@ header h3 {
     color: #005745;
 }
 
+.square {
+    width: 100%;
+}
+
+.square h3 {
+    border: none;
+    width: 94%;
+    margin-left: 1%;
+}
+
+.square img {
+    height: 50px;
+    width: 50px;
+    display: block;
+    margin: 0px auto 0px auto;
+}
+
 ul {
     list-style-type: none;
 }

@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="description" content="Assignment">
         <meta name="author" content="Caleb Holland">
-        <title>Oh No, Weather! Home</title>
+        <title>Weather in Fish Haven</title>
         <link href="css/normalize.css" rel="stylesheet">
         <link href="css/small.css" rel="stylesheet">
         <link href="css/medium.css" rel="stylesheet">
@@ -14,38 +14,48 @@
         <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
       </head>
       <body onload="callFuncts()">
-          <div id="content">
+          <div id="content" class="=5585000">
+            <aside id="date" class="nottoday">Saturday - Preston Pancakes in the Park! <br>9:00 AM Saturday at the city park.</aside>
             <header>
                 <img src="images/logo.png" alt="logo">
                 <h1>Oh No, Weather!</h1>
                 <h3>Prepare For The Worst</h3>
-            </header>
+                </header>
             <nav class="green" id="menubar">
                 <button onclick="toggleMenu()">&#9776; MENU</button>
                 <ul id="primaryNav" class="hide">
-                   <li><a class="active" href="index.html">Home</a></li>
+                   <li><a href="index.html">Home</a></li>
                     <li><a href="preston.html">Preston</a></li>
                     <li><a href="sodasprings.html">Soda Springs</a></li>
-                    <li><a href="fishhaven.html">Fish Haven</a></li>
+                    <li><a class="active" href="fishhaven.html">Fish Haven</a></li>
                     <li><a href="stormcenter.html">Storm Center</a></li>
                     <li><a href="gallery.html">Gallery</a></li>
                 </ul>
             </nav>
             <main>
-                <section id="herobox" class="above">
-                    
-                    <img src="images/lightninghero.jpeg" alt="Hero Image">
+                <h1 class="green">Fish Haven</h1>
+                <section id="herobox">
+                    <ul id="summary">
+                        <li>Weather Summary</li>
+                        <li>High: <span id="hitemp"></span> °F</li>
+                        <li id="fholder">Wind Chill: <span id="chill"></span>°F</li>
+                        <li>Humidity: <span id="Humidity"></span>%</li>
+                        <li>Wind speed: <span id="wind"></span> MPH</li>
+                    </ul>
+                    <img src="images/franklinOriginal560.jpg" alt="Hero Image" sizes="100vw"
+                    srcset="images/franklinOriginal1120.jpg 1120w, 
+                    images/franklinOriginal1920.jpg 1920w">
                 </section>
-                <section class="locations"></section>
-                <div class="events">
-                    <div>
-                    <h2 class="green">Chimp Event</h2>
-                    <p>Every June 30th, we sponsor the release of a dozen untamed monkeys in Preston. 
-                        This is a time-honored tradition that the police are unable to prevent, 
-                        and in fact gave up on trying to prevent years ago. Have fun!</p>
-                    </div>
-                    <img src="images/chimpevent.jpeg" alt="Chimp Event">
-                </div>
+                <h2 class="hide2" id="green1">Five-Day Forecast</h2>
+                <section class="cards" id="forecast"></section>
+                <article class="green">
+                    <img src="images/granicus.jpg" alt="Battle of Granicus River map">
+                    <h2>On This Day</h2>
+                    <p>On this day in history, 334 BC, The Macedonian army of Alexander the Great
+                        defeated Darius III of Persia in the Battle of the Granicus River.
+                        <a href="https://www.onthisday.com/events/may/22" class="green">Source: onthisday.com</a>
+                    </p>
+                </article>
                 <section>
                     <h2 class="green">Contact Us</h2>
                     <div class="contact">
@@ -74,11 +84,13 @@
                     <p id="updated"></p>
                     <p id="visited"></p>
                 </div>
+                <p>Weather data provided by openweathermap.org</p>
             </footer>
           </div>
           <script src="js/windChill.js"></script>
+          <script src="js/weatherapi.js"></script>
+          <script src="towndata.js"></script>
           <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
           <script src="js/scripts.js"></script>
-          <script src="js/jsonread.js"></script>
       </body>
 </html>

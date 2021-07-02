@@ -1,21 +1,6 @@
 @media only screen and (min-width: 620px) {
 
-.square {
-    width: 100%;
-}
 
-.square h3 {
-    border: none;
-    width: 94%;
-    margin-left: 1%;
-}
-
-.square img {
-    height: 50px;
-    width: 50px;
-    display: block;
-    margin: 0px auto 0px auto;
-}
 
 .square p {
     text-align: center;
