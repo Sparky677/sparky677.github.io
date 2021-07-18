@@ -1,3 +1,9 @@
+/*placeholder*/
+img {
+    background-color: red;
+}
+
+/*general*/
 #content {
     max-width: 960px;
     margin: 4% auto;
@@ -11,6 +17,20 @@ body {
 h1, h2, h3, h4, h5, h6, p {
     color: #7F534B;
     background-color: #E5F2C9;
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 1rem;
+}
+
+/*within the body*/
+
+.logo {
+    display: grid;
+    grid-template-columns: 200px 300px;
+}
+
+.logo img {
+    margin: auto;
 }
 
 /*clearfix*/
