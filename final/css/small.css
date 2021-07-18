@@ -90,6 +90,11 @@ nav button:hover, nav ul li a:hover {
     border-radius: 5px;
 }
 
+.alert button:hover {
+    background-color: rgba(0,0,0,0.3);
+    color: white;
+}
+
 /*clearfix*/
 .clearfix:after {
     content: "";
