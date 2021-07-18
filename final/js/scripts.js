@@ -81,6 +81,12 @@ function toggleMenu() {
   document.getElementById("primaryNav").classList.toggle("hide");
 }
 
+function dismissAlert() {
+  document.getElementById("alert").classList.toggle("hide");
+  document.getElementById("alert").classList.toggle("alert");
+  
+}
+
 function checkName() {
   let name=document.getElementById("fname").value;
   isName=/\D/.test(name);

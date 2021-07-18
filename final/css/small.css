@@ -1,9 +1,11 @@
 /*placeholder*/
+
 img {
     background-color: red;
 }
 
 /*general*/
+
 #content {
     max-width: 960px;
     margin: 4% auto;
@@ -14,23 +16,78 @@ body {
     background-color: #33E5FF;
 }
 
-h1, h2, h3, h4, h5, h6, p {
+.block {
     color: #7F534B;
     background-color: #E5F2C9;
     border: 2px solid black;
     border-radius: 5px;
-    padding: 1rem;
+    padding: 0.5rem;
 }
 
-/*within the body*/
+.active {
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+/*body general*/
 
 .logo {
     display: grid;
-    grid-template-columns: 200px 300px;
+    grid-template-columns: 100px 200px;
+    font-size: 50%;
+    text-align: center;
+    border: 0px solid;
+    color: #7F534B;
 }
 
 .logo img {
     margin: auto;
+    width: 100%;
+}
+
+
+nav button {
+    margin: .2rem 2%;
+    background-color: transparent;
+    border: none;
+    font-size: 1.6rem;
+    color: #7F534B;
+}
+
+nav ul li a {
+    display: block;
+    padding: 0.8rem 2%;
+    text-decoration: none;
+    color: #7F534B;
+    border-top: 1px solid rgba(0,0,0,0.3);
+}
+
+nav ul li {
+    list-style: none;
+}
+
+nav button:hover, nav ul li a:hover {
+    background-color: rgba(0,0,0,0.3);
+    color: white;
+}
+
+.hide {
+    display: none;
+}
+
+/*index*/
+
+.alert {
+    display: grid;
+    grid-template-columns: 5fr 1fr;
+}
+.alert button {
+    margin: .2rem 2%;
+    background-color: transparent;
+    border: none;
+    font-size: 1.6rem;
+    color: #7F534B;
+    border: 2px solid black;
+    border-radius: 5px;
 }
 
 /*clearfix*/

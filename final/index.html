@@ -18,8 +18,9 @@
                     <img src="images/placeholder.png" alt="logo maybe" class="placeholder">
                     <h1>Raymond Chamber<br>of Commerce</h1>
                 </div>
-                <p>Alert Here</p>
-                <nav id="menubar">
+                <div class="block alert" id="alert"><p class=>Alert Here</p><button onclick="dismissAlert()">Dismiss</button></div>
+                <nav id="menubar" class="block">
+                    <button class="block" onclick="toggleMenu()">&#9776; MENU</button>
                     <ul id="primaryNav" class="hide">
                         <li><a class="active" href="index.html">Home</a></li>
                         <li><a href="city.html">City</a></li>
@@ -35,8 +36,8 @@
                     <img src="images/placeholder.png" alt="municipality">
                 </figure>
                 <div>
-                    <article>
-                        <p>Join today!</p>
+                    <article class="block">
+                        <h2>Join today!</h2>
                         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti aut magnam deserunt
                             dignissimos quos exercitationem maxime laborum hic, libero esse.</p>
                         <a href="/">Register</a>
@@ -47,7 +48,7 @@
                         <img src="images/placeholder.png" alt="ad here">
                     </figure>
                 </div>
-                <article>
+                <article class="block">
                     <h2>What do we stand for?</h2>
                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non beatae aliquid accusantium ducimus, perspiciatis
                         repudiandae modi mollitia sunt quo dolore accusamus eius maiores voluptatem adipisci quis eaque saepe. Distinctio
@@ -55,29 +56,29 @@
                         reiciendis. Eum aliquam quasi natus in!</p>
                 </article>
                 <div class="twobytwo">
-                    <aside>
+                    <aside class="block">
                         <h3>Local events</h3>
                         <div></div>
                     </aside>
-                    <aside>
+                    <aside class="block">
                         <h3>Weather today</h3>
                         <div></div>
                         <p>3-Day Forecast</p>
                         <div></div>
                     </aside>
-                    <aside>
+                    <aside class="block">
                         <h3>Contact Us</h3>
                         <p>Location</p>
                         <p>Phone Number</p>
                     </aside>
-                    <aside>
+                    <aside class="block">
                         <p>Social Media</p>
                         <label><img src="images/placeholder.png" alt="YouTube"><a href="https://www.youtube.com">YouTube</a></label>
                         <label><img src="images/placeholder.png" alt="Twitter"><a href="https://www.twitter.com">Twitter</a></label>
                     </aside>
                 </div>
             </body>
-            <footer>
+            <footer class="block">
                 <div>
                     <p id="copy"></p>
                     <p id="updated"></p>
