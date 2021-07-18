@@ -1,0 +1,21 @@
+#content {
+    max-width: 960px;
+    margin: 4% auto;
+    padding: 0.5em;
+}
+
+body {
+    background-color: #33E5FF;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    color: #7F534B;
+    background-color: #E5F2C9;
+}
+
+/*clearfix*/
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
