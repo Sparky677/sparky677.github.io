@@ -22,11 +22,25 @@ body {
     margin-bottom: 20px;
 }
 
+.inblock {
+    color: #7F534B;
+    background-color: #E5F2C9;
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 0.5rem;
+    margin-bottom: 20px;
+    display: inline-block;
+}
+
 img {
     width: 100%;
 }
 
 .hide {
+    display: none;
+}
+
+.smallhide {
     display: none;
 }
 
@@ -52,7 +66,7 @@ img {
 }
 
 
-button {
+button, .honorarybutton {
     margin: .2rem 2%;
     border: none;
     font-size: 1.6rem;
@@ -74,7 +88,7 @@ nav ul li {
     list-style: none;
 }
 
-button:hover, nav ul li a:hover {
+button:hover, .honorarybutton:hover, nav ul li a:hover {
     background-color: rgba(0,0,0,0.3);
     color: white;
 }
@@ -97,6 +111,10 @@ button:hover, nav ul li a:hover {
 .smalla {
     color: purple;
     text-decoration: underline;
+}
+
+.centered {
+    text-align: center;
 }
 
 /*index*/
