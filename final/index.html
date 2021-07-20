@@ -1,93 +1,114 @@
 <!DOCTYPE html>
 <html lang="en-us">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="description" content="Assignment">
-        <meta name="author" content="Caleb Holland">
-        <title>Chamber of Commerce in Raymond, WA</title>
-        <link href="css/normalize.css" rel="stylesheet">
-        <link href="css/small.css" rel="stylesheet">
-        <link href="css/medium.css" rel="stylesheet">
-        <link href="css/large.css" rel="stylesheet">
-      </head>
-      <body onload="callFuncts()">
-          <div id="content">
-            <header>
-                <div class="logo">
-                    <img src="images/placeholder.png" alt="logo maybe" class="placeholder">
-                    <h1>Raymond Chamber<br>of Commerce</h1>
-                </div>
-                <div class="block alert" id="alert"><p>Alert Here</p><button onclick="dismissAlert()">Dismiss</button></div>
-                <nav id="menubar" class="block">
-                    <button class="block" onclick="toggleMenu()">&#9776; MENU</button>
-                    <ul id="primaryNav" class="hide">
-                        <li><a class="active" href="index.html">Home</a></li>
-                        <li><a href="city.html">City</a></li>
-                        <li><a href="join.html">Join</a></li>
-                        <li><a href="directory.html">Directory</a></li>
-                        <li><a href="contact.html">Contact Us</a></li>
-                    </ul>
-                </nav>
-            </header>
-            <main>
-                <figure>
-                    <img src="images/placeholder.png" alt="municipality">
-                    <img src="images/placeholder.png" alt="municipality">
-                </figure>
-                <div>
-                    <article class="block">
-                        <h2>Join today!</h2>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti aut magnam deserunt
-                            dignissimos quos exercitationem maxime laborum hic, libero esse.</p>
-                        <a href="/">Register</a>
-                    </article>
-                    <figure>
-                        <img src="images/placeholder.png" alt="ad here">
-                        <img src="images/placeholder.png" alt="ad here">
-                        <img src="images/placeholder.png" alt="ad here">
-                    </figure>
-                </div>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Assignment">
+    <meta name="author" content="Caleb Holland">
+    <title>Chamber of Commerce in Raymond, WA</title>
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/small.css" rel="stylesheet">
+    <link href="css/medium.css" rel="stylesheet">
+    <link href="css/large.css" rel="stylesheet">
+</head>
+
+<body onload="callFuncts()">
+    <div id="content" class="=5604473">
+        <header>
+            <div class="block logo">
+                <img src="images/commergeLogo.png" alt="logo">
+                <h1>Raymond Chamber<br>of Commerce</h1>
+            </div>
+            <div class="block alert" id="alert">
+                <p>No applicable alerts</p><button onclick="dismissAlert()">Dismiss</button>
+            </div>
+            <nav id="menubar" class="block">
+                <button class="reversehide" onclick="toggleMenu()">&#9776; MENU</button>
+                <ul id="primaryNav" class="hide">
+                    <li><a class="active" href="index.html">Home</a></li>
+                    <li><a href="city.html">City</a></li>
+                    <li><a href="join.html">Join</a></li>
+                    <li><a href="directory.html">Directory</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <figure class="municipality block">
+                <img src="images/businessman.jpeg" alt="municipality">
+                <img src="images/businesswoman.jpeg" alt="municipality">
+            </figure>
+            <div class="pair">
                 <article class="block">
-                    <h2>What do we stand for?</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non beatae aliquid accusantium ducimus, perspiciatis
-                        repudiandae modi mollitia sunt quo dolore accusamus eius maiores voluptatem adipisci quis eaque saepe. Distinctio
-                        similique magni accusantium quod, modi in dolore voluptates vel quidem obcaecati odit, tempora id consequuntur
-                        reiciendis. Eum aliquam quasi natus in!</p>
+                    <h2>Join today!</h2>
+                    <p>Register as a member of our chamber of commerce and gain several benefits!</p>
+                    <button class="inline"><a href="join.html">Learn More</a></button>
                 </article>
-                <div class="twobytwo">
+                <figure class="ads">
+                    <a href="http://www.denniscompany.com/"><img src="images/dennisco.jpg" alt="ad here"></a>
+                    <a href="https://www.thriftway.com/"><img src="images/thriftway.jpg" alt="ad here"></a>
+                    <a href="https://www.acehardware.com"><img src="images/ace.jpg" alt="ad here"></a>
+                </figure>
+            </div>
+            <article class="block">
+                <h2>What do we stand for?</h2>
+                <p class="mission">Members of our chamber of commerce look out for eachother's interests. It's so much
+                    easier to work together than to compete for business - so that's exactly what we do.</p>
+            </article>
+                <div class="pair">
                     <aside class="block">
                         <h3>Local events</h3>
-                        <div></div>
+                        <section>
+                            <h4>Raymond Farmers' Market</h4>
+                            <p>July 23, 12:00 AM to 5:00 PM</p>
+                        </section>
+                        <section>
+                            <h4>Willapa Festival</h4>
+                            <p>August 6th-August 8th</p>
+                        </section>
                     </aside>
                     <aside class="block">
-                        <h3>Weather today</h3>
-                        <div></div>
-                        <p>3-Day Forecast</p>
-                        <div></div>
+                        <div class="today">
+                            <h3>Weather Right Now</h3>
+                            <p>Current temperature: <span id="hitemp"></span> °F</p>
+                            <p>Humidity: <span id="Humidity"></span>%</p>
+                            <p>Wind speed: <span id="wind"></span> MPH</p>
+                            <img src="#" alt="weatherIcon" id="todayicon">
+                        </div>
+                        <br>
+                        <div class="cards"></div>
                     </aside>
-                    <aside class="block">
+                    <aside class="block" id="contact">
                         <h3>Contact Us</h3>
-                        <p>Location</p>
-                        <p>Phone Number</p>
+                        <p>1234 Duryea Street <br>
+                            Raymond, WA <br>
+                            98577
+                        </p>
+                        <p>Phone number: <br>
+                            (360) 942-9999</p>
                     </aside>
-                    <aside class="block">
+                    <aside class="block social">
                         <p>Social Media</p>
-                        <label><img src="images/placeholder.png" alt="YouTube"><a href="https://www.youtube.com">YouTube</a></label>
-                        <label><img src="images/placeholder.png" alt="Twitter"><a href="https://www.twitter.com">Twitter</a></label>
+                        <img src="images/youtube.png" alt="YouTube"><a class="smalla"
+                            href="https://www.youtube.com">YouTube</a>
+                        <img src="images/twitter.png" alt="Twitter"><a class="smalla"
+                            href="https://www.twitter.com">Twitter</a>
                     </aside>
                 </div>
-            </main>
-            <footer class="block">
-                <div>
-                    <p id="copy"></p>
-                    <p id="updated"></p>
-                    <p id="visited"></p>
-                </div>
-                <a href="sources.html">Sources</a>
-            </footer>
-          </div>
+        </main>
+        <footer class="block">
+            <div id="footer">
+                <p id="copy"></p>
+                <p id="updated"></p>
+                <p id="visited"></p>
+            </div>
+            <a class="smalla" href="sources.html">Sources</a>
+        </footer>
+    </div>
 
-          <script src="js/scripts.js"></script>
-      </body>
+    <script src="js/scripts.js"></script>
+    <script src="js/weatherapi.js"></script>
+</body>
+
 </html>

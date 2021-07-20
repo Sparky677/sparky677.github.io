@@ -9,8 +9,11 @@ function lastVisited() {
   previous(now);
   days=(timeSince/86400000);
   rounded=Math.floor(days);
-  if (rounded<=3650) {
-    final="Last visited "+String(timeSince)+" milliseconds ago, or "+String(rounded)+" days.";
+  if (rounded<1) {
+    final="Last visited less than a day ago";
+  }
+  else if (rounded<=3650) {
+    final="Last visited "+String(rounded)+" days ago";
   }
   else {
     final="Looks like this is your first visit!"

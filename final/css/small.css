@@ -1,8 +1,5 @@
 /*placeholder*/
 
-img {
-    background-color: red;
-}
 
 /*general*/
 
@@ -22,20 +19,30 @@ body {
     border: 2px solid black;
     border-radius: 5px;
     padding: 0.5rem;
+    margin-bottom: 20px;
 }
 
-.active {
-    background-color: rgba(0, 0, 0, 0.05);
+img {
+    width: 100%;
+}
+
+.hide {
+    display: none;
+}
+
+.smalla {
+    color: purple;
+    text-decoration: underline;
 }
 
 /*body general*/
 
 .logo {
     display: grid;
-    grid-template-columns: 100px 200px;
+    grid-template-columns: 50px 200px;
+    max-width: 250px;
     font-size: 50%;
     text-align: center;
-    border: 0px solid;
     color: #7F534B;
 }
 
@@ -45,15 +52,17 @@ body {
 }
 
 
-nav button {
+button {
     margin: .2rem 2%;
-    background-color: transparent;
     border: none;
     font-size: 1.6rem;
     color: #7F534B;
+    border: 2px solid black;
+    border-radius: 5px;
+    background-color: transparent;
 }
 
-nav ul li a {
+a {
     display: block;
     padding: 0.8rem 2%;
     text-decoration: none;
@@ -65,13 +74,29 @@ nav ul li {
     list-style: none;
 }
 
-nav button:hover, nav ul li a:hover {
+button:hover, nav ul li a:hover {
     background-color: rgba(0,0,0,0.3);
     color: white;
 }
 
-.hide {
-    display: none;
+.active {
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+#footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+}
+
+#footer p:nth-child(1), #footer p:nth-child(2), #footer p:nth-child(3) {
+    margin: auto;
+}
+
+
+.smalla {
+    color: purple;
+    text-decoration: underline;
 }
 
 /*index*/
@@ -80,19 +105,65 @@ nav button:hover, nav ul li a:hover {
     display: grid;
     grid-template-columns: 5fr 1fr;
 }
-.alert button {
-    margin: .2rem 2%;
-    background-color: transparent;
-    border: none;
-    font-size: 1.6rem;
-    color: #7F534B;
-    border: 2px solid black;
-    border-radius: 5px;
+
+.municipality {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
 }
 
-.alert button:hover {
-    background-color: rgba(0,0,0,0.3);
-    color: white;
+.social img {
+    width: 50px;
+}
+
+.social {
+    display: grid;
+    grid-template: 1fr 1fr 1fr/50px 1fr;
+}
+
+.social p {
+    grid-area: 1/1/2/3;
+}
+
+#contact {
+    display: grid;
+    grid-template: 1fr 1fr/1fr 1fr;
+}
+
+#contact h3 {
+    grid-area: 1/1/2/3;
+    margin: auto;
+}
+
+#contact p {
+    margin: auto;
+}
+
+.today {
+    display: grid;
+    grid-template: 3rem 2rem 2rem 2rem/1fr 100px;
+    padding-bottom: 20px;
+    border-bottom: 2px solid black;
+}
+
+.today img {
+    grid-area: 1/2/5/3;
+    margin: auto;
+}
+
+div .cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.cards section {
+    margin: auto;
+}
+.cards img {
+    width: 100px;
+}
+
+.inline {
+    width: 150px;
 }
 
 /*clearfix*/

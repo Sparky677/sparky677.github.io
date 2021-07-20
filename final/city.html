@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Assignment">
+    <meta name="author" content="Caleb Holland">
+    <title>Chamber of Commerce in Raymond, WA</title>
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/small.css" rel="stylesheet">
+    <link href="css/medium.css" rel="stylesheet">
+    <link href="css/large.css" rel="stylesheet">
+</head>
+
+<body onload="callFuncts()">
+    <div id="content" class="=5604473">
+        <header>
+            <div class="block logo">
+                <img src="images/commergeLogo.png" alt="logo">
+                <h1>Raymond Chamber<br>of Commerce</h1>
+            </div>
+            <div class="block alert" id="alert">
+                <p>No applicable alerts</p><button onclick="dismissAlert()">Dismiss</button>
+            </div>
+            <nav id="menubar" class="block">
+                <button onclick="toggleMenu()">&#9776; MENU</button>
+                <ul id="primaryNav" class="hide">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a class="Active" href="city.html">City</a></li>
+                    <li><a href="join.html">Join</a></li>
+                    <li><a href="directory.html">Directory</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </nav>
+        </header>
+        
+        <footer class="block">
+            <div id="footer">
+                <p id="copy"></p>
+                <p id="updated"></p>
+                <p id="visited"></p>
+            </div>
+            <a class="smalla" href="sources.html">Sources</a>
+        </footer>
+    </div>
+
+    <script src="js/scripts.js"></script>
+    <script src="js/weatherapi.js"></script>
+</body>
+
+</html>
