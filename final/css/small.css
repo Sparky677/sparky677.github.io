@@ -200,10 +200,6 @@ form label input, form label select {
 
 /*contact*/
 
-textarea {
-    max-width: 330px;
-}
-
 #board {
     margin: auto;
     max-width: 300px;
@@ -212,6 +208,10 @@ textarea {
 
 #board ul li {
     list-style: none;
+}
+
+.bandaid2 {
+    max-width: 100%;
 }
 
 /*clearfix*/
