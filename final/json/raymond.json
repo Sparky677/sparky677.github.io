@@ -1,39 +1,46 @@
 {
   "businesses": [
     {
-      "contact": "phone or email",
-      "desc": "Season: SummerMarket Hours:July 9 - September 24, 2021Fridays, 2 PM - 7 PMLocation: River Front Park located Off of Alder St, Raymond, WA 98577",
-      "link": "link here"
+      "name": "Rockett and Son",
+      "contact": "Phone: (360) 942-3477",
+      "logo": "https://sparky677.github.io/final/images/rockett-logo-white.png",
+      "link": "https://www.rockettfinancial.com/"
     },
     {
-      "contact": "phone or email",
-      "desc": "Season: SummerMarket Hours:July 9 - September 24, 2021Fridays, 2 PM - 7 PMLocation: River Front Park located Off of Alder St, Raymond, WA 98577",
-      "link": "link here"
+      "name": "Rumbles CPA, PLLC",
+      "contact": "Email: Chris@rumblescpa.com",
+      "logo": "https://sparky677.github.io/final/images/RumblesCPA_Logo(R).png",
+      "link": "https://rumblescpa.com/"
     },
     {
-      "contact": "phone or email",
-      "desc": "Season: SummerMarket Hours:July 9 - September 24, 2021Fridays, 2 PM - 7 PMLocation: River Front Park located Off of Alder St, Raymond, WA 98577",
-      "link": "link here"
+      "name": "Willapa Logging Co Inc",
+      "contact": "Phone: (360) 875-5670",
+      "logo": "https://sparky677.github.io/final/images/missing.jpg",
+      "link": "https://www.dnb.com/business-directory/company-profiles.willapa_logging_company_inc.54588161f856dfa6a1266bc479af0a21.html"
     },
     {
-      "contact": "phone or email",
-      "desc": "Season: SummerMarket Hours:July 9 - September 24, 2021Fridays, 2 PM - 7 PMLocation: River Front Park located Off of Alder St, Raymond, WA 98577",
-      "link": "link here"
+      "name": "Plato Michael C CPA",
+      "contact": "Phone: (360) 942-5747",
+      "logo": "https://sparky677.github.io/final/images/missing.jpg",
+      "link": "http://www.platocpa.com/"
     },
     {
-      "contact": "phone or email",
-      "desc": "Season: SummerMarket Hours:July 9 - September 24, 2021Fridays, 2 PM - 7 PMLocation: River Front Park located Off of Alder St, Raymond, WA 98577",
-      "link": "link here"
+      "name": "Custom Cuts Sawmill",
+      "contact": "Phone: (360) 553-4751",
+      "logo": "https://sparky677.github.io/final/images/missing.jpg",
+      "link": "https://www.facebook.com/pages/category/Agricultural-Cooperative/Custom-cuts-sawmill-203271459683495/link here"
     },
     {
-      "contact": "phone or email",
-      "desc": "Season: SummerMarket Hours:July 9 - September 24, 2021Fridays, 2 PM - 7 PMLocation: River Front Park located Off of Alder St, Raymond, WA 98577",
-      "link": "link here"
+      "name": "Brown Lewis Janhunen & Spencer",
+      "contact": "Phone: (360) 942-3637",
+      "logo": "https://sparky677.github.io/final/images/missing.jpg",
+      "link": "https://www.yellowpages.com/raymond-wa/mip/brown-lewis-janhunen-spencer-459540216"
     },
     {
-      "contact": "phone or email",
-      "desc": "Season: SummerMarket Hours:July 9 - September 24, 2021Fridays, 2 PM - 7 PMLocation: River Front Park located Off of Alder St, Raymond, WA 98577",
-      "link": "link here"
+      "name": "Weyerhaeuser",
+      "contact": "Phone: (360) 942-2442",
+      "logo": "https://sparky677.github.io/final/images/WY_Lofo-Horizontal_Color.png",
+      "link": "https://www.weyerhaeuser.com/blog/lumber-mill-tour-raymond-wa/"
     }
     
   ]
