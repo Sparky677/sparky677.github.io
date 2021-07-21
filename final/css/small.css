@@ -198,6 +198,22 @@ form label input, form label select {
     color: white;
 }
 
+/*contact*/
+
+textarea {
+    max-width: 330px;
+}
+
+#board {
+    margin: auto;
+    max-width: 300px;
+    text-align: center;
+}
+
+#board ul li {
+    list-style: none;
+}
+
 /*clearfix*/
 .clearfix:after {
     content: "";
