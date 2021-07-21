@@ -14,7 +14,7 @@
 </head>
 
 <body onload="callFuncts()">
-    <div id="content" class="=5604473">
+    <div id="content">
         <header>
             <div class="block logo">
                 <img src="images/commergeLogo.png" alt="logo">
@@ -31,7 +31,40 @@
                 </ul>
             </nav>
         </header>
-        
+        <main>
+            <form method="get" action="thanks.html" class="block pair">
+                <fieldset>
+                    <legend>Personal Information</legend>
+                    <label>First Name*<input type="text" name="fname" placeholder="Enter 2+ alpha characters" required pattern="[A-Za-z ]{2,}"></label>
+                    <label>Last Name*<input type="text" name="lname" placeholder="Enter 2+ alpha characters" required pattern="[A-Za-z ]{2,}"></label>
+                    <label>Email*<input type="email" name="email"placeholder="name@example.com" required></label>
+                    <label>Phone Number*<input type="tel" name="tel" placeholder="xxx xxx xxxx" required pattern="[0-9]{1,}"></label>
+                    <label>Title<input type="text" name="title" placeholder="Mr., Mrs., Dr., etc."></label>
+                </fieldset>
+                <fieldset>
+                    <legend>Business Information</legend>
+                    <label>Business Name*<input type="text" name="bname" placeholder="" required></label>
+                    <label>Business Address<input type="text" name="address" placeholder=""></label>
+                    <label>Business Website<input type="text" name="site" placeholder=""></label>
+                    <label>Business Description<input type="text" name="desc" placeholder=""></label>
+
+                    <label>Membership Level (details below)<select name="memberlevel" required>
+                        <option value="">Please Select &#9662</option>
+                        <option value="nonprofit">Non-Profit ($100)</option>
+                        <option value="bronze">Bronze ($200)</option>
+                        <option value="silver">Silver ($400)</option>
+                        <option value="gold">Gold ($1000)</option>
+                    </select></label>
+                </fieldset>
+                
+                <div class="submit"><input type="submit" value="Sign Up" class="honorarybutton"></div>
+
+
+                <p>Non-Profit tier is the basic bronze tier, but is only allowed for those who run a non-profit orgamization. <br><br>
+                    Bronze tier grants you membership to our chamber - you can vote in any decisions, and your opinions are valued and considered.<br><br>
+                    Silver tier has the basic bronze membership included, and also includes access to chamber luncheons, plus you're given a VIP title which is purely cosmetic. <br><br>
+                    Gold tier grants bronze and silver-tier benefits, plus a VVIP title, which lets you vote twice. </p>            </form>
+        </main>
         <footer class="block">
             <div id="footer">
                 <p id="copy"></p>
@@ -43,7 +76,6 @@
     </div>
 
     <script src="js/scripts.js"></script>
-    <script src="js/weatherapi.js"></script>
 </body>
 
 </html>

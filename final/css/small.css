@@ -22,16 +22,6 @@ body {
     margin-bottom: 20px;
 }
 
-.inblock {
-    color: #7F534B;
-    background-color: #E5F2C9;
-    border: 2px solid black;
-    border-radius: 5px;
-    padding: 0.5rem;
-    margin-bottom: 20px;
-    display: inline-block;
-}
-
 img {
     width: 100%;
 }
@@ -182,6 +172,31 @@ div .cards {
 
 .inline {
     width: 150px;
+}
+
+/*Join*/
+
+form label input, form label select {
+    -webkit-appearance: none;
+    display: block;
+    font-size: 1rem;
+    border: solid 2px #005745;
+    border-radius: 8px;
+    padding: .75rem;
+    color: #005745;
+    width: 75%;
+    max-width: 20rem;
+    background-color: rgba(0,0,0,0.1);
+}
+
+
+#bandaid {
+    background-color: #E5F2C9;
+}
+
+#bandaid:hover {
+    background-color: rgba(0,0,0,0.3);
+    color: white;
 }
 
 /*clearfix*/

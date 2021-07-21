@@ -14,7 +14,7 @@
 </head>
 
 <body onload="callFuncts()">
-    <div id="content" class="=5604473">
+    <div id="content">
         <header>
             <div class="block logo">
                 <img src="images/commergeLogo.png" alt="logo">
@@ -24,7 +24,7 @@
                 <button class="reversehide" onclick="toggleMenu()">&#9776; MENU</button>
                 <ul id="primaryNav" class="smallhide">
                     <li><a href="index.html">Home</a></li>
-                    <li><a class="Active" href="city.html">Raymond</a></li>
+                    <li><a class="active" href="city.html">Raymond</a></li>
                     <li><a href="join.html">Join</a></li>
                     <li><a href="directory.html">Directory</a></li>
                     <li><a href="contact.html">Contact Us</a></li>
@@ -36,18 +36,23 @@
                 <h1>Welcome to Raymond!</h1>
                 <h2>Logging Town/Glorified Pit Stop</h2>
             </div>
-            <section>
-                <h3 class="inblock">Current Events</h3>
+            <section class="block">
+                <h3>Current Events</h3>
                 <div class="trio">
-                    <article>
-                        <p>test</p>
+                    <article class="block">
+                        <h4>Rough or Ready Car Show</h4>
+                        <p>Jul 23, 12:00 PM-5:00 PM</p>
+                        <img src="images/carshow.jpg" alt="Car show">
                     </article>
-                    <article>
-                        <p>test</p>
-
+                    <article class="block">
+                        <h4>R.A.R.E. RC Car & Bike Show</h4>
+                        <p>Aug 7, 9:00 AM-5:00 PM</p>
+                        <img src="images/bikeshow.jpg" alt="Bike show">
                     </article>
-                    <article class="garbage">
-                        <p>test</p>
+                    <article class="block">
+                        <h4>Pacific County Fair</h4>
+                        <p>Aug 26-28</p>
+                        <img src="images/fair.jpg" alt="Pacific County Fair">
 
                     </article>
                 </div>
@@ -74,7 +79,6 @@
     </div>
 
     <script src="js/scripts.js"></script>
-    <script src="js/weatherapi.js"></script>
 </body>
 
 </html>
