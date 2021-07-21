@@ -33,7 +33,11 @@
         </header>
         <main>
             <h1 class="block">Business Directory</h1>
-            <div id="directory"></div>
+            <div class="block centered">
+                <button onclick="toggleGrid()" id="gridToggle">Switch to Grid View</button>
+                <button class="hide" onclick="toggleList()" id="listToggle">Switch to List View</button>
+            </div>
+            <div id="directory" class="single"></div>
         </main>
         <footer class="block">
             <div id="footer">

@@ -9,7 +9,6 @@ fetch(dataURL)
     console.log(businessData);
     for (i = 0; i < 7; i++) {
       business=i;
-      console.log(businessData.businesses[business]);
       let card=document.createElement('section');
       let name = document.createElement('h2');
       let contact=document.createElement('p');
@@ -27,7 +26,8 @@ fetch(dataURL)
       logo.alt="logo";
       ref.href=businessData.businesses[business].link;
       ref.appendChild(logo);
-      logobox.appendChild(logo);
+      logobox.appendChild(ref);
+      logobox.className="logobox";
 
       card.appendChild(name);
       card.appendChild(contact);
@@ -35,3 +35,17 @@ fetch(dataURL)
       document.querySelector('#directory').appendChild(card);
     }
   });
+
+  function toggleGrid() {
+    document.getElementById("gridToggle").classList.toggle("hide");
+    document.getElementById("listToggle").classList.toggle("hide");
+    document.getElementById("directory").classList.toggle("trio");
+    document.getElementById("directory").classList.toggle("single");
+  }
+
+  function toggleList() {
+    document.getElementById("gridToggle").classList.toggle("hide");
+    document.getElementById("listToggle").classList.toggle("hide");
+    document.getElementById("directory").classList.toggle("trio");
+    document.getElementById("directory").classList.toggle("single");    
+  }
